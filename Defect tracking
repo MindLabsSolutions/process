@@ -1,0 +1,94 @@
+1. Bug Discovery
+Owner: Any team member (Developer, Tester, Project Manager, or End User)
+Activity: Identifying and documenting the bug.
+  This phase involves recognizing a problem,
+Identification
+Who: Any team member or end user who encounters unexpected or incorrect behavior in the software.
+What: Spotting a deviation from the intended functionality or performance issues. This could occur during development, testing, or in a production environment.
+How: Through manual testing, automated test failures, user reports, or monitoring tools that flag errors or performance degradation.
+
+  2. Issue Creation
+Owner: Discoverer (the person who identified the bug)
+Activity: Opening a new issue and providing detailed information using a bug report template.
+Documentation
+  Once identified, the bug needs to be thoroughly documented. This documentation serves as the primary reference for the team tasked with resolving the issue. Effective documentation includes:
+
+  1. Descriptive Title:
+Provide a concise yet descriptive title that summarizes the bug, enabling quick understanding and sorting. Example: "Crash when attempting to save project on macOS Catalina."
+  
+  2. Detailed Description:
+  Overview: A summary of the bug, including what was expected versus what actually occurred.
+  Steps to Reproduce: A step-by-step guide on how to replicate the issue, which is critical for anyone trying to fix it.
+  Frequency: Mention how often the bug occurs (always, sometimes, under specific conditions).
+  Severity: Assess the impact of the bug on the application's functionality or the user experience.    
+  
+    3. Environment Details:
+Include specific details about the environment where the bug was discovered, such as the operating system, device type, browser and version, application version, network conditions, and any relevant configurations.
+  
+  4. Evidence:
+Screenshots/Videos: Attach visual proof where applicable to illustrate the issue.
+Logs: Include any relevant log output or error messages that could help diagnose the problem.
+Code Snippets: If applicable, reference the parts of the codebase that might be related to the bug.
+  
+  5. Additional Information:
+Related Issues: Link to any related issues or tickets, if known.
+Workarounds: If available, describe any temporary fixes or workarounds to mitigate the impact of the bug.
+
+  Reporting
+Where: The detailed report is created in the project's GitHub repository under the "Issues" section. Utilize available templates to ensure consistency and completeness.
+Assignment: While the reporter might not assign the bug directly, they should tag or mention the project manager or team lead to ensure the issue is seen and prioritized.
+Tools and Best Practices
+Use Markdown: For better readability, use GitHub's Markdown syntax to format the issue. Include bullet points, code blocks, and headers where appropriate.
+Be Clear and Concise: While detail is good, ensure the report is to the point, avoiding unnecessary information that could distract from understanding and resolving the issue.
+The goal of this activity is to provide a clear, detailed, and actionable bug report that can guide the resolution process efficiently. A well-documented bug is easier to prioritize, assign, and ultimately resolve, contributing to the overall quality of the project.
+
+
+
+  3. Classification
+Owner: Project Manager or Lead Developer
+Activity: Applying labels for categorization and assigning the issue to the appropriate team member(s) for resolution.
+  Purpose: Labels provide a visual cue about the bug's nature, priority, and status, facilitating quick sorting and filtering.
+
+Steps:
+Review Existing Labels: Understand the predefined labels in your GitHub repository. Common labels include types (bug, enhancement), priorities (high, medium, low), status (in progress, blocked), and modules (UI, backend, API).
+
+Select Appropriate Labels: Choose labels that accurately describe the issue's type, priority, and relevant area of the project. You can apply multiple labels to a single issue.
+
+Custom Labels: If existing labels don't cover the bug's specifics, create new labels to better categorize issues. Ensure consistency in label naming and color coding across the project.
+
+Apply Labels: Click on the "Labels" section on the right side of the issue page and select the relevant labels from the dropdown list. If you're creating a new label, you can do so by clicking on "New label".
+
+
+
+  4. Prioritization
+Owner: Project Manager or Team Lead
+Activity: Assessing the bug's impact and urgency, and assigning it to a milestone.
+
+  5. Investigation and Fix Development
+Owner: Assigned Developer
+Activity: Investigating the cause, developing a fix, and conducting unit tests.
+
+  6. Code Review and Merge
+Owner: Reviewer (a peer developer or lead developer) and Assigned Developer
+Activity: Reviewing the pull request for the fix, discussing potential improvements, and merging the fix into the main codebase.
+
+  7. Verification and Closure
+Owner: QA Tester or the original bug reporter
+Activity: Verifying the fix in the main branch or staging environment and closing the issue if resolved.
+
+  8. Reflection and Prevention
+Owner: Entire Team (Developers, Testers, Project Managers)
+Activity: Analyzing bug trends, reviewing the bug tracking and resolution process, and updating practices to prevent future issues.
+
+  9. Communication
+Owner: Project Manager or Communications Lead
+Activity: Keeping the team and stakeholders informed about bug status and including bug fixes in release notes.
+Additional Tips
+Automation
+
+Owner: DevOps or Tooling Specialist
+Activity: Implementing GitHub Actions for automatic issue labeling and assignment based on predefined rules.
+Documentation
+
+Owner: Project Manager or Documentation Specialist
+Activity: Maintaining up-to-date documentation for the bug tracking and resolution process to ensure team alignment.
